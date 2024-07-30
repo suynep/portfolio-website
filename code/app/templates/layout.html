@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <!-- FONTS IMPORT -->
+    <!-- 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&family=Noto+Sans+Devanagari:wght@100..900&family=Petit+Formal+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICON IMPORT -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    {% block stylesheets %}{% endblock %} {% endblock %}
+  </head>
+  <body>
+    <div class="navbar-container">
+      <nav class="navbar">
+        <a href="/" class="navbar-ele">घर.</a>
+        <a href="/works" class="navbar-ele">works.</a>
+        <a href="/about" class="navbar-ele">about.</a>
+        <a href="/blog" class="navbar-ele">blog.</a>
+      </nav>
+      <div class="navbar-right">
+        <a href="/night-mode" class="navbar-icon">
+          <i class="fa fa-moon-o fa-2x"></i>
+        </a>
+      </div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer">
+      <p>© coded with love & laughs by Suy.</p>
+    </footer>
+  </body>
+</html>

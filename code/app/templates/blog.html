@@ -1,0 +1,35 @@
+{% extends "layout.html" %} {% block title %}moi blog{% endblock %} {% block
+stylesheets %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/blog.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="panel-blog-main">
+  <h1 class="panel-blog-title">Words From A Lonely Ape</h1>
+  <p class="panel-blog-intro">
+    Solitude fuels my words. I write to dream and to find my way.
+  </p>
+  <!-- basic template for a post -->
+  {% for post in posts %}
+  <div class="post">
+    <h2 class="post-title">{{ post["title"] }}</h2>
+    <p class="post-date">{{ post["date"] }}</p>
+  </div>
+  <div class="blog-preview">{{ post["preview"]|safe }}</div>
+  {% endfor %}
+</div>
+
+<script>
+  // this script will be executed when the page is loaded
+  // it will add a click event listener to each post
+  // when a post is clicked, the user will be redirected to the post's page
+  const posts = document.querySelectorAll(".post");
+  posts.forEach((post) => {
+    post.addEventListener("click", () => {
+      const title = post.querySelector(".post-title").textContent;
+      window.location.href = `/blog/${title}`;
+    });
+  });
+</script>
+{% endblock %}

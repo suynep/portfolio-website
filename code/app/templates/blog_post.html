@@ -1,0 +1,14 @@
+{% extends "layout.html" %} {% block title %}{{ blogvalue["title"] }}{% endblock
+%} {% block stylesheets %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/blog.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="panel-blog-main">
+  <!-- <h1 class="panel-blog-title">{{ blogvalue["title"] }}</h1> -->
+  <!-- basic template for a post -->
+  <div class="post-view">{{ blogvalue["content"]|safe }}</div>
+</div>
+
+{% endblock %}

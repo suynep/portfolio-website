@@ -1,0 +1,14 @@
+light-mode-colors:
+yellow: (245, 209, 66)
+black: (13, 13, 18)
+black-light: (27, 27, 28)
+white: (255, 255, 255)
+fonts: (black on light bckgrds, white on dark ones)
+overall bckgrd: yellow
+panels: black-light
+dark-mode-colors:
+yellow: (245, 209, 66)
+black: (13, 13, 18)
+black-light: (27, 27, 28)
+panels: (245, 204, 0)
+bckgrd: (black-light)

@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block title %}hola, home{% endblock %} {% block
+stylesheets %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/home.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="panel-main">
+  <h1 class="panel-title">नमस्ते!</h1>
+  <h3 class="panel-intro">I’m Suyash Nepal</h3>
+  <p class="panel-about-me">
+    a creative developer based in Nepal, who’s joyfully passionate about<br />
+    art and web visuals
+  </p>
+</div>
+
+<div class="flex-bottom-container">
+  <div class="panel-wc">
+    <h1 class="panel-wc-title">WORDS CORNER</h1>
+    <p class="panel-wc-words">
+      <em>
+        “In the midst of winter, I found there was, within me,<br />an
+        invincible summer.<br />And that makes me happy.<br />For it says that
+        no matter how hard the world pushes against me,<br />within me, there’s
+        something stronger – something better,<br />pushing right back.”
+      </em>
+    </p>
+  </div>
+  <div class="panel-blog">
+    <h1 class="panel-blog-title">BLOG</h1>
+    <p class="panel-blog-intro">
+      i write once in a blue moon.<br />check out my writings h e r e.
+    </p>
+  </div>
+</div>
+<script>
+  const blogSelector = document.querySelector(".panel-blog");
+
+  blogSelector.addEventListener("click", () => {
+    window.location.href = "/blog";
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,40 @@
+:root {
+  --yellow: rgb(245, 209, 66);
+  --black: rgb(13, 13, 18);
+  --black-light: rgb(27, 27, 28);
+  --white: rgb(255, 255, 255);
+}
+.panel-about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--black-light);
+  margin-top: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 2em;
+}
+
+.panel-ele {
+    border-radius: 0.5em;
+    width: 80%;
+    background-color: inherit;
+}
+
+.socials {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--black-light);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 5em;
+    border-radius: 2em;
+}

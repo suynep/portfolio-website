@@ -1,0 +1,39 @@
+{% extends "layout.html" %} {% block title %}about ma{% endblock %} {% block
+stylesheets %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/about.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="panel-about-main">
+  <div class="panel-ele">
+    <h1 class="panel-about-title">मेरो बारे</h1>
+    <p class="panel-about-intro">
+      नमस्ते! I’m Suyash Nepal i love visualizations of any kind, sunsets thrill
+      me, and i'm a sucker for sweets. i hope to inspire, and perhaps ignite a
+      small spark of joy within you. that said, i'm still very new to the world
+      of computers, web dev, and coding. i hope for this website to track my
+      growth.
+    </p>
+  </div>
+  <div class="panel-ele">
+    <h1 class="panel-about-title">songs i'm listening to</h1>
+    <p class="panel-about-intro">
+      kanye west - runaway<br />
+      kendrick lamar - sing about me, i'm dying of thirst<br />
+    </p>
+  </div>
+</div>
+<div class="socials">
+  <a href="https://www.instagram.com/hsayus_" class="socials-ele" target="_blank">
+    <i class="fa fa-instagram fa-2x"></i>
+  </a>
+  <a
+    href="https://www.github.com/suynep"
+    class="socials-ele"
+    target="_blank"
+  >
+    <i class="fa fa-github fa-2x"></i>
+  </a>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+sections: 
+
+Projects
+About
+
+About: 
+
+Creative Developer. Passionate about WebGL, Visuals, and Generative Art. Namaste!
+
+Namaste! -> Hello! Transition -> If you can implement, try. (A time based switch --> every 1.5 seconds?)
+
+Frost Effect on Click: --> A bit long term implementation: Whenever the user views my webpage for a while, change the Homepage's `Namaste, I'm Suy...` panel to Frost Effect. i.e. seep in random (or noise-esque) lines (of a specified size, preferably small) from the borders. Random lines --> Lines with random angles/offset positions?
+
+

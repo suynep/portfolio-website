@@ -1,0 +1,92 @@
+:root {
+  --yellow: rgb(245, 209, 66);
+  --black: rgb(13, 13, 18);
+  --black-light: rgb(27, 27, 28);
+  --white: rgb(255, 255, 255);
+}
+
+* {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20%;
+  background-color: var(--black-light);
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin-top: 0.5rem;
+  /* padding: 0 20px; */
+  width: 100%;
+  background-color: inherit;
+  font-size: 0.8em;
+}
+
+.navbar-ele {
+  background-color: inherit;
+  color: var(--white);
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 2em;
+  border-radius: 0.5em;
+}
+
+.navbar-right {
+  background-color: inherit;
+  display: flex;
+  justify-content: right;
+  padding: 0 20px;
+  width: 40%;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-light);
+  color: var(--white);
+  border-radius: 0.1em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-icon {
+  background-color: inherit;
+  padding-right: 20%;
+  margin: 20px;
+}
+
+h1,
+p,
+h3,
+h4,
+h2,
+i {
+  background-color: inherit;
+}
+
+a {
+  margin-right: 20px;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+a:hover {
+    color: var(--yellow);
+    transition: color 0.5s;
+}
