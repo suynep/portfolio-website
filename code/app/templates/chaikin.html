@@ -1,0 +1,23 @@
+{% extends "layout.html" %} {% block title %}chaikin algo{% endblock %} 
+
+{% block head %}
+
+<script src={{ url_for('static', filename='assets/p5.js') }}></script> 
+
+{% endblock %} 
+
+{% block stylesheets %}
+
+<link rel="stylesheet" href={{ url_for('static', filename='css/sketch.css') }} /> 
+
+
+{% endblock %} 
+
+{% block content %}
+
+<div id="canvas-container">
+</div>
+
+<script src={{ url_for('static', filename='js/script.js') }}></script>
+
+{% endblock %}

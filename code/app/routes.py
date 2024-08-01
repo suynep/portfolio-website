@@ -31,3 +31,8 @@ def blog_post(title):
     print(i)
     blogvalue = {"title": posts[index]["title"], "content": posts[index]["content"]}
     return render_template("blog_post.html", blogvalue=blogvalue)
+
+
+@app.route("/chaikin")
+def chaikin():
+    return render_template("chaikin.html")
