@@ -62,7 +62,7 @@ function draw () {
 
     // nextPoints.push(createVector(points[i].x, points[i].y)); ////
     for (let i = 0; i < points.length - 1; i += 1) {
-      ;[qx, qy, px, py] = chaikinCalc(
+      [qx, qy, px, py] = chaikinCalc(
         points[i].x,
         points[i].y,
         points[i + 1].x,

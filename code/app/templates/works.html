@@ -1,0 +1,22 @@
+{% extends "layout.html" %} {% block title %}works{% endblock %} {% block
+stylesheets %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/blog.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="panel-blog-main">
+  <h1 class="panel-title">WORKS</h1>
+  <p class="panel-intro">here are some of the projects i've worked on</p>
+  <div class="post">
+    <h2 class="post-title">chaikin algorithm</h2>
+    <div class="blog-preview">
+      <p class="post-intro">
+        a simple implementation of the chaikin algorithm using p5.js
+      </p>
+      <a href="/chaikin" class="post-link">view project</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

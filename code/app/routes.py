@@ -8,6 +8,9 @@ from app.md_convert import posts
 def index():
     return render_template("homepage.html")
 
+@app.route("/works")
+def works():
+    return render_template("works.html")
 
 @app.route("/blog")
 def blog():
